@@ -1,0 +1,14 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+        double X2 = sc.nextDouble();
+        System.out.printf("sqrt(%.2f) = %.2f%n", X2, Math.sqrt(X2));
+
+    }
+}
