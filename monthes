@@ -1,0 +1,40 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        if ( a < 3){
+            System.out.println("Its Winter");
+        }
+        else {
+            if (a > 2 && a < 6) {
+                System.out.println("Its spring");
+            }
+            else {
+                if ( a > 5 && a < 9){
+                    System.out.println("Its summer");
+                }
+                else {
+                    if ( a > 8 && a < 12){
+                        System.out.println("Its autumn");
+                    }
+                    else {
+                        if ( a == 12){
+                            System.out.println("Its Winter");
+                        }
+                        else {
+                            if ( a > 12){
+                                System.out.println("Error,this month doesn't exist");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
